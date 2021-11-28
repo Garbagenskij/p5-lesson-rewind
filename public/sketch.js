@@ -33,14 +33,14 @@ function preload() {
   // pink_icing = loadImage("./assets/pink.jpg");
   // sprinkle = loadImage("./assets/sprinkle.jpg");
 }
-
+//#049CDB
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
-  background("#049CDB");
+  background("red");
   imageMode(CENTER);
   image(cake, width / 2, height / 2);
-  cake.resize(0.9 * width, 0);
+  cake.resize(0.5 * width, 0);
 }
 
 function centerCanvas() {
