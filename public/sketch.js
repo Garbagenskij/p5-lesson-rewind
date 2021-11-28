@@ -76,17 +76,13 @@ function mouseMoved() {
 function interface() {
   removeElements();
 
-  //! imageMode(CENTER);
+  imageMode(CENTER);
   // if (windowWidth > windowHeight) {
   //   cake.resize(0, cake_scale * height);
   // } else {
   //   cake.resize(cake_scale * width, 0);
   // }
-  //!image(cake, width / 2, height / 2);
-
-  button = createImg("sprinkle.png");
-  button.position(width / 2, height / 2);
-  button.mousePressed(function1);
+  image(cake, width / 2, height / 2);
 }
 function function1() {
   console.log("Function1 sta funzionando");
