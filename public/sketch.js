@@ -27,12 +27,12 @@ function newBroadcast(data) {
 
 function preload() {
   cake = loadImage("./assets/cake.png");
-  // cherry = loadImage("./assets/cherry.jpg");
-  // blue_icing = loadImage("./assets/blue.jpg");
-  // violet_icing = loadImage("./assets/violet.jpg");
-  // yellow_icing = loadImage("./assets/yellow.jpg");
-  // pink_icing = loadImage("./assets/pink.jpg");
-  // sprinkle = loadImage("./assets/sprinkle.jpg");
+  cherry = loadImage("./assets/cherry.png");
+  blue_icing = loadImage("./assets/blue.png");
+  violet_icing = loadImage("./assets/violet.png");
+  yellow_icing = loadImage("./assets/yellow.png");
+  pink_icing = loadImage("./assets/pink.png");
+  sprinkle = loadImage("./assets/sprinkle.png");
 }
 //#049CDB
 function setup() {
@@ -83,7 +83,7 @@ function interface() {
   // }
   image(cake, width / 2, height / 2);
 
-  button = createButton("AAA");
+  button = createImage("cherry");
   button.position(width / 2, height / 2);
   button.mousePressed(function1);
 }
