@@ -13,7 +13,7 @@ function newConnection() {
 function newBroadcast(data) {
   console.log(data);
   //(>10)
-  fill("red");
+  fill("blue");
   circle(data.x, data.y, 10);
 }
 
