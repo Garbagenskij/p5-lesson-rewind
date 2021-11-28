@@ -83,8 +83,8 @@ function interface() {
   } else {
     cake.resize(cake_scale * width, 0);
   }
-  cake = createImg("./assets/cake.png");
   cake.position(width / 2, height / 2);
+  cake = createImg("./assets/cake.png");
   cake.style("pointer-events", "none");
 }
 
