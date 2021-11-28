@@ -1,3 +1,4 @@
+let cnv;
 let clientSocket = io();
 
 clientSocket.on("connect", newConnection);
@@ -16,7 +17,8 @@ function newBroadcast(data) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background("#049CDB");
+  background("red");
+  //#049CDB
 }
 
 //io da me
