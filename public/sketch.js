@@ -83,7 +83,7 @@ function interface() {
   // }
   image(cake, width / 2, height / 2);
 
-  button = createImage("cherry");
+  button = createImg("cherry");
   button.position(width / 2, height / 2);
   button.mousePressed(function1);
 }
