@@ -78,12 +78,12 @@ function interface() {
   // image(cake, width / 2, height / 2);
 
   imageMode(CENTER);
-  cake = createImg("./assets/cake.png");
   if (windowWidth > windowHeight) {
     cake.resize(0, cake_scale * height);
   } else {
     cake.resize(cake_scale * width, 0);
   }
+  cake = createImg("./assets/cake.png");
   cake.position(width / 2, height / 2);
   cake.style("pointer-events", "none");
 }
