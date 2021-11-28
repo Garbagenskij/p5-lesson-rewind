@@ -39,7 +39,13 @@ function setup() {
   centerCanvas();
   background("orange");
   imageMode(CENTER);
-  cake.resize(0.5 * width, 0);
+
+  if (windowWidth > windowHeight) {
+    cake.resize(0, 0.5 * height);
+  } else {
+    cake.resize(0.5 * width, 0);
+  }
+
   image(cake, width / 2, height / 2);
 }
 
