@@ -1,4 +1,5 @@
 let cnv;
+let cake_scale = 0.8;
 
 let cake;
 let cherry;
@@ -41,9 +42,9 @@ function setup() {
   imageMode(CENTER);
 
   if (windowWidth > windowHeight) {
-    cake.resize(0, 0.5 * height);
+    cake.resize(0, cake_scale * height);
   } else {
-    cake.resize(0.5 * width, 0);
+    cake.resize(cake_scale * width, 0);
   }
 
   image(cake, width / 2, height / 2);
