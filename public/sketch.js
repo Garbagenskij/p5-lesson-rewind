@@ -38,7 +38,7 @@ function preload() {
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
-  background("orange");
+  background("#049CDB");
   imageMode(CENTER);
 
   if (windowWidth > windowHeight) {
