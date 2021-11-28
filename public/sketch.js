@@ -27,7 +27,7 @@ function newBroadcast(data) {
 
 function preload() {
   cake = loadImage("./assets/cake.png");
-  cherry = loadImage("./assets/cherry.jpg");
+  // cherry = loadImage("./assets/cherry.jpg");
   // blue_icing = loadImage("./assets/blue.jpg");
   // violet_icing = loadImage("./assets/violet.jpg");
   // yellow_icing = loadImage("./assets/yellow.jpg");
