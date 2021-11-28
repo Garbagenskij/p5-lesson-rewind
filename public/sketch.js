@@ -39,15 +39,16 @@ function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
   background("#049CDB");
-  imageMode(CENTER);
+  interface();
+  // imageMode(CENTER);
 
-  if (windowWidth > windowHeight) {
-    cake.resize(0, cake_scale * height);
-  } else {
-    cake.resize(cake_scale * width, 0);
-  }
+  // if (windowWidth > windowHeight) {
+  //   cake.resize(0, cake_scale * height);
+  // } else {
+  //   cake.resize(cake_scale * width, 0);
+  // }
 
-  image(cake, width / 2, height / 2);
+  // image(cake, width / 2, height / 2);
 }
 
 function centerCanvas() {
@@ -69,4 +70,25 @@ function mouseMoved() {
     y: mouseY,
   };
   clientSocket.emit("mouse", message);
+}
+
+function interface() {
+  removeElements();
+
+  // image(cake, width / 2, height / 2);
+
+  imageMode(CENTER);
+  if (windowWidth > windowHeight) {
+    cake.resize(0, cake_scale * height);
+  } else {
+    cake.resize(cake_scale * width, 0);
+  }
+  cake = createImg("./assets/cake.png");
+  cake.position(width / 2, height / 2);
+  cake.style("pointer-events", "none");
+}
+
+function windowResized() {
+  interface();
+  centerCanvas();
 }
