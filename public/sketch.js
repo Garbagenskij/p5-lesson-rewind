@@ -37,7 +37,7 @@ function preload() {
 }
 //#049CDB
 function setup() {
-  cnv = createCanvas(1200, 800);
+  cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
   background("#049CDB");
   interface();
@@ -75,7 +75,6 @@ function mouseMoved() {
 
 function interface() {
   removeElements();
-
   imageMode(CENTER);
   // if (windowWidth > windowHeight) {
   //   cake.resize(0, cake_scale * height);
@@ -83,9 +82,6 @@ function interface() {
   //   cake.resize(cake_scale * width, 0);
   // }
   image(cake, width / 2, height / 2);
-}
-function function1() {
-  console.log("Function1 sta funzionando");
 }
 
 function windowResized() {
