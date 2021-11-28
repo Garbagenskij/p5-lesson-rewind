@@ -63,9 +63,3 @@ function mouseMoved() {
   };
   clientSocket.emit("mouse", message);
 }
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-
-  // cake.resize(0.9 * width, 0);
-}
