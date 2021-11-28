@@ -83,12 +83,12 @@ function interface() {
   // }
   image(cake, width / 2, height / 2);
 
-  //   button = createImage("cherry");
-  //   button.position(width / 2, height / 2);
-  //   button.mousePressed(function1);
-  // }
-  // function function1() {
-  //   console.log("Function1 sta funzionando");
+  button = createImage("cherry");
+  button.position(width / 2, height / 2);
+  button.mousePressed(function1);
+}
+function function1() {
+  console.log("Function1 sta funzionando");
 }
 
 function windowResized() {
