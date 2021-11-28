@@ -84,7 +84,7 @@ function interface() {
   // }
   image(cake, width / 2, height / 2);
 
-  button = createImg("cherry.png");
+  button = createImg("sprinkle.png");
   button.position(width / 2, height / 2);
   button.mousePressed(function1);
 }
