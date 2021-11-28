@@ -27,7 +27,7 @@ function newBroadcast(data) {
 
 function preload() {
   cake = loadImage("./assets/cake.png");
-  // cherry = loadImage("./assets/cherry.jpg");
+  cherry = loadImage("./assets/cherry.jpg");
   // blue_icing = loadImage("./assets/blue.jpg");
   // violet_icing = loadImage("./assets/violet.jpg");
   // yellow_icing = loadImage("./assets/yellow.jpg");
@@ -74,25 +74,21 @@ function mouseMoved() {
 
 function interface() {
   removeElements();
+
   imageMode(CENTER);
-
-  if (windowWidth > windowHeight) {
-    cake.resize(0, cake_scale * height);
-  } else {
-    cake.resize(cake_scale * width, 0);
-  }
-
-  image(cake, width / 2, height / 2);
-
-  // imageMode(CENTER);
   // if (windowWidth > windowHeight) {
   //   cake.resize(0, cake_scale * height);
   // } else {
   //   cake.resize(cake_scale * width, 0);
   // }
-  // cake = createImg("./assets/cake.png");
-  // cake.position(width / 2, height / 2);
-  // cake.style("pointer-events", "none");
+  image(cake, width / 2, height / 2);
+
+  button = createImg("cherry.png");
+  button.position(width / 2, height / 2);
+  button.mousePressed(function1);
+}
+function function1() {
+  console.log("Function1 sta funzionando");
 }
 
 function windowResized() {
