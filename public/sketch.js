@@ -66,6 +66,6 @@ function mouseMoved() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
-  createCanvas();
-  cake.resize(0.9 * width, 0);
+
+  // cake.resize(0.9 * width, 0);
 }
