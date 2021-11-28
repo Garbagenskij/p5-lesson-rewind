@@ -1,5 +1,6 @@
 let cnv;
 let cake_scale = 0.8;
+var button;
 
 let cake;
 let cherry;
@@ -81,15 +82,15 @@ function interface() {
   // } else {
   //   cake.resize(cake_scale * width, 0);
   // }
-  image(cherry, width / 2, height / 2);
+  image(cake, width / 2, height / 2);
 
-  // button = createImg("cherry");
-  // button.position(width / 2, height / 2);
-  // button.mousePressed(function1);
+  button = createImg("cherry.png");
+  button.position(width / 2, height / 2);
+  button.mousePressed(function1);
 }
-// function function1() {
-//   console.log("Function1 sta funzionando");
-// }
+function function1() {
+  console.log("Function1 sta funzionando");
+}
 
 function windowResized() {
   interface();
