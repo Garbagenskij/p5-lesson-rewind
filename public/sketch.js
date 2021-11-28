@@ -40,6 +40,7 @@ function setup() {
   background("#049CDB");
   imageMode(CENTER);
   image(cake, width / 2, height / 2);
+  cake.resize(0.9 * width, 0);
 }
 
 function centerCanvas() {
@@ -64,10 +65,6 @@ function mouseMoved() {
 }
 
 function windowResized() {
-  if (windowHeight <= windowWidth) {
-    resizeCanvas(windowHeight - margin, windowHeight - margin);
-  } else {
-    resizeCanvas(windowWidth - margin, windowWidth - margin);
-  }
-  centerCanvas();
+  resizeCanvas(windowWidth, windowHeight);
+  cake.resize(0.9 * width, 0);
 }
