@@ -37,7 +37,7 @@ function preload() {
 function setup() {
   cnv = createCanvas(windowWidth, windowHeight);
   centerCanvas();
-  background("blue");
+  background("orange");
   imageMode(CENTER);
   cake.resize(0.5 * width, 0);
   image(cake, width / 2, height / 2);
@@ -66,5 +66,6 @@ function mouseMoved() {
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  createCanvas();
   cake.resize(0.9 * width, 0);
 }
