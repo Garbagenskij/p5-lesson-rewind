@@ -1,5 +1,5 @@
 let cnv;
-let cake_scale = 0.8;
+//let cake_scale = 0.8;
 var button;
 
 let cake;
