@@ -37,7 +37,7 @@ function preload() {
 }
 //#049CDB
 function setup() {
-  cnv = createCanvas(1080, 1920);
+  cnv = createCanvas(770, 770);
   centerCanvas();
   background("#049CDB");
   interface();
