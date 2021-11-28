@@ -37,7 +37,7 @@ function preload() {
 }
 //#049CDB
 function setup() {
-  cnv = createCanvas(windowWidth, windowHeight);
+  cnv = createCanvas(1080, 1920);
   centerCanvas();
   background("#049CDB");
   interface();
@@ -81,6 +81,7 @@ function interface() {
   // } else {
   //   cake.resize(cake_scale * width, 0);
   // }
+  cake.resize(770, 0);
   image(cake, width / 2, height / 2);
 }
 
